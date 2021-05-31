@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background {
+  position: relative;
+  background-image: url(https://wallpapercave.com/wp/Z4CD0Ic.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+}
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  position: absolute;
+  top: 10rem;
+  left: 40rem;
+}
+h1 {
+  font-size: 8rem;
+  margin: 10px;
+  font-weight: 400;
+  /* position: absolute;
+  top: 10rem;
+  left: 40rem; */
+}
+
+.city {
+  font-size: 20px;
+  border-radius: 10px;
+  height: 5rem;
+  width: 20rem;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.city:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  /* position: absolute;
+  top: 30rem;
+  left: 50rem; */
+}
+.btn:hover {
+  background-image: linear-gradient(
+    to left,
+    rgb(238, 160, 238),
+    rgb(167, 95, 218),
+    rgb(77, 77, 219),
+    rgb(68, 236, 68),
+    rgb(230, 230, 82),
+    rgb(231, 181, 89),
+    rgb(221, 103, 103)
+  );
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  color: black;
+  font-weight: 800;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weather-report {
+  font-family: inherit;
+  font-size: 5rem;
+  margin: 2rem;
+  position: absolute;
+  top: 25rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-transform: capitalize;
+}
